@@ -50,7 +50,7 @@ If you use this code, please cite:
 
 > Gizawi, A.S., (2026). Predicting green space vulnerability to urban development in Indonesia using historical satellite imagery and population projections. *Land Use Policy*. [DOI once available]
 
-Code archive: [Zenodo DOI to be added]
+Code archive: (https://doi.org/10.5281/zenodo.21737580)
 
 ## Contact
 
