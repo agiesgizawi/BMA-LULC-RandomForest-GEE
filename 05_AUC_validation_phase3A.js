@@ -29,7 +29,7 @@ var lulc_2000  = ee.Image(lulc_2000_asset);
 var lulc_2012  = ee.Image(lulc_2012_asset);
 var drivers_2000 = ee.Image(drivers_2000_asset);
 
-// VERIFY BANDS: Print to console to ensure you see 'builtup_density' AND 'builtup_proxy'
+// VERIFY BANDS: Print to console to ensure 'builtup_density' AND 'builtup_proxy'
 print('Drivers 2000 Bands:', drivers_2000.bandNames());
 
 // --- Step 2: Define Class Scheme ---
@@ -87,7 +87,7 @@ print('Training Set (70%):', trainSet.size());
 print('Testing Set (30%):', testSet.size());
 
 // --- Step 5: Train Random Forest Classifier in PROBABILITY mode ---
-// Note: .bandNames() automatically picks up your new separate layers
+// Note: .bandNames() automatically picks up new separate layers
 var classifier = ee.Classifier.smileRandomForest({numberOfTrees: 100, seed:42})
   .setOutputMode('PROBABILITY').train({
   features: trainSet,
