@@ -58,4 +58,4 @@ Code archive: [Zenodo DOI to be added]
 
 ## License
 
-[Add a license, e.g. MIT for code — recommended for reproducibility and reuse]
+[MIT]
