@@ -8,7 +8,7 @@ These scripts support the manuscript submitted to *Land Use Policy* (Elsevier): 
 
 - **Study area:** Bandung Metropolitan Area, West Java, Indonesia
 - **Classification method:** Object-Based Image Analysis (OBIA, SNIC segmentation) with Random Forest (100 trees), applied to Landsat 7 (2000, 2012) and Landsat 8 (2024) surface reflectance imagery
-- **Land cover classes:** Built-up, Water body, Bare land, Agriculture and other vegetaion, Forest
+- **Land cover classes:** Built-up, Water body, Bare land, Agriculture and other vegetation, Forest
 - **Susceptibility modeling:** Random Forest trained in probability mode on observed 2012→2024 green space-to-urban conversion, validated against 2000→2012 backcasting (Phase 3A) and 2012→2024 (Phase 3B), then projected to 2100 under SSP3 and SSP5 population scenarios
 - **Reported accuracy:** Overall accuracy 92–94%, Kappa 0.90–0.92; AUC 0.86 (backcasting validation) and 0.92 (primary model)
 
@@ -30,9 +30,9 @@ Run in the order below — each stage depends on outputs (GEE assets) from the p
 
 - **Imagery:** Landsat 7 Collection 2 Level-2 (`LANDSAT/LE07/C02/T1_L2`), Landsat 8 Collection 2 Level-2 (`LANDSAT/LC08/C02/T1_L2`)
 - **Terrain:** SRTM 30m Global (`USGS/SRTMGL1_003`)
-- **Population (historical):** [ WorldPop / gridded population dataset used]
+- **Population (historical):** WorldPop gridded population dataset
 - **Population (future, SSP3/SSP5):** Shared Socioeconomic Pathway population projections, 1km resolution, 2100
-- **Roads:** [OpenStreetMap / prepared in QGIS]
+- **Roads:** OpenStreetMap, distance-to-road layer prepared in QGIS
 - **Study area boundary:** Administrative boundary of BMA (`ADM_BMA_48S` asset)
 
 ## How to run
@@ -48,14 +48,15 @@ Note: scripts reference private GEE assets under the author's account. To reprod
 
 If you use this code, please cite:
 
-> Gizawi, A.S., (2026). Predicting green space vulnerability to urban development in Indonesia using historical satellite imagery and population projections. *Land Use Policy*. [DOI once available]
+> Gizawi, A.S., Itaya, A. (2026). Predicting green space vulnerability to urban development in Indonesia using historical satellite imagery and population projections. *Land Use Policy*. [DOI once available]
 
-Code archive: (https://doi.org/10.5281/zenodo.21737580)
+Code archive: [https://doi.org/10.5281/zenodo.21737580](https://doi.org/10.5281/zenodo.21737580)
 
 ## Contact
 
-[Agie Syirban Gizawi/ agie.gizawi@gmail.com/ Forest Engineering Lab, Mie University]
+Agie Syirban Gizawi — agie.gizawi@gmail.com
+Forest Engineering Lab, Mie University
 
 ## License
 
-[MIT]
+MIT
